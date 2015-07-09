@@ -1,0 +1,22 @@
+- var data = public.components
+- var components = {}
+- var pathPrefix = ''
+- for (var i = 0; i <= current.path.length -2; i++) {
+-     pathPrefix += '../'
+- }
+- for (var folder in data) {
+-   if (typeof data[folder]._contents !== 'undefined') {
+-       var contents = data[folder]._contents
+-       for (var file in contents) {
+-           if (contents[file].indexOf('css') !== -1) {
+-               components[folder] = {}
+-               components[folder].hasCSS = false
+-               components[folder].hasJS = false
+-               components[folder].partial = pathPrefix + 'components/' + folder + '/_html'
+-               components[folder].baseSource = 'components/' + folder + '/'
+-               if (contents.indexOf('style.css') !== -1) components[folder].hasCSS = true
+-               if (contents.indexOf('script.js') !== -1) components[folder].hasJS = true
+-           }
+-       }
+-   }
+- }
