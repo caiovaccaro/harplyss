@@ -1,3 +1,2 @@
-# AnotherHarpBoilerplate
-
-Under heavy construction
+# harplyss
+Smart boilerplate for harp.js. Under heavy construction
