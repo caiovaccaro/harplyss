@@ -21,10 +21,18 @@ app.get('/', function(req, res, next) {
 
 app.get('*/edit-json', function (req, res) {
   console.log(req.originalUrl);
-  res.send('edit');
-  //fs.readFile(__dirname + '/public/data.json', 'utf8', function(err, data) {
-  //  res.render('index', { jsonContent: JSON.parse(data) });
-  //});
+  var dataJsonFilePath = __dirname + '/public' + path.dirname(req.originalUrl) + '/_data.json';
+  console.log(dataJsonFilePath);
+  fs.exists(dataJsonFilePath, function (exists) {
+    console.log(exists);
+    if (exists) {
+      fs.readFile(dataJsonFilePath, 'utf8', function(err, data) {
+        res.render('edit', { jsonContent: JSON.parse(data) });
+      });
+    } else {
+      res.redirect('/site');
+    }
+  });
 });
 
 //app.post('/', function (req, res) {
