@@ -166,3 +166,24 @@
     display: block;
 }
 
+.save {
+    border: 0;
+    background-color: #2a6496;
+    color: white;
+    padding: 10px 30px;
+    margin: 20px 0 10px;
+    border-radius: 4px;
+    float: left;
+}
+
+.msg {
+    float: left;
+    margin: 30px 0 0 15px;
+}
+
+.back {
+    position: relative;
+    clear: both;
+    top: 40px;
+    margin-bottom: 20px;
+}

@@ -1,5 +1,9 @@
 {
     "index": {
-        "title": "Testando"
+        "title": "Testando título da home",
+        "subtitle": "subtítulo"
+    },
+    "another": {
+        "title": "yep"
     }
 }

@@ -28,8 +28,15 @@ function MainViewCtrl($scope, $filter) {
             },
             dataType: 'text'
         })
-        .always(function (data) {
-            //console.log(data);
+        .done(function(data) {
+            $('.msg').show().text('Json file updated!').delay(2000).fadeOut(function() {
+                $(this).text('');
+            });
+        })
+        .fail(function(data) {
+            $('.msg').show().text('Could not save the file.').delay(2000).fadeOut(function() {
+                $(this).text('');
+            });
         });
     }
 }
