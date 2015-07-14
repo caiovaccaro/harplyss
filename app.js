@@ -35,14 +35,28 @@ app.get('*/edit-json', function (req, res) {
   });
 });
 
-//app.post('/', function (req, res) {
-//  fs.writeFile(__dirname + '/public/data.json', JSON.stringify(JSON.parse(req.body.jsonFile), null, 4), function(err) {
-//    if(err) {
-//      console.log('Could not save file.', err);
-//    } else {
-//      console.log('File saved: /public/data.json');
-//    }
-//  });
-//});
+app.post('*/edit-json', function (req, res) {
+  var dataJsonFilePath = __dirname + '/public' + path.dirname(req.originalUrl) + '/_data.json';
+
+  fs.exists(dataJsonFilePath, function (exists) {
+    console.log(exists);
+    if (exists) {
+      fs.writeFile(dataJsonFilePath, JSON.stringify(JSON.parse(req.body.jsonFile), null, 4), function(err) {
+        if(err) {
+          res.sendStatus(500);
+          res.send('Could not save file.');
+          console.log('Could not save file.', err);
+        } else {
+          res.sendStatus(200);
+          console.log('File saved: /public/data.json');
+        }
+      });
+    } else {
+      res.sendStatus(500);
+      res.send('File does not exist.');
+      console.log('File does not exist.', err);
+    }
+  });
+});
 
 module.exports = app;

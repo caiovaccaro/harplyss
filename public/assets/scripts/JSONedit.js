@@ -21,7 +21,7 @@ function MainViewCtrl($scope, $filter) {
 
     $scope.saveFile = function() {
         $.ajax({
-            url: '/',
+            url: window.location.href,
             method: 'POST',
             data: {
                 jsonFile: JSON.stringify($scope.jsonData)
