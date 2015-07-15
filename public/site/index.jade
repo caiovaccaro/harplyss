@@ -2,3 +2,6 @@ extends /_includes/_default.layout
 
 block content
     != partial(components['header']['partial'], { title: title, subtitle: subtitle })
+    main
+        .wrap.container-fluid
+            != partial('../../README.md')

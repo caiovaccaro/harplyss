@@ -1,7 +1,6 @@
 # harplyss
-Smart boilerplate for harp.js. Under construction, use it at your own risk.
-
-**Everything part of the solution/documentation is constantly changing!**
+Smart boilerplate for harp.js.
+**Under construction, use it at your own risk. Everything part of the solution/documentation is constantly changing!**
 
 ## Features
 - Automatic assets loading. Harp will include a separate tag for all your "components" CSS and JS files automatically.
@@ -10,7 +9,7 @@ Smart boilerplate for harp.js. Under construction, use it at your own risk.
 - Data.json interface for editing. By accessing */edit-json urls where there is a _data.json file you will be able to edit it in the browser (thanks @mb21 for [JSONedit](http://mb21.github.io/JSONedit/)).
 
 
-### Roadmap
+## Roadmap
 - Livereload.
 - Build tasks.
 - Support for Webpack, Browserify, JSPM, etc for JS loading.

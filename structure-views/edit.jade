@@ -6,9 +6,9 @@ html(ng-app='JSONedit')
         script(src='/assets/bower_components/angular/angular.min.js')
         script(src='/assets/bower_components/angular-ui-sortable/sortable.min.js')
         link(href='/assets/bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-        script(src='/assets/scripts/directives.js')
-        script(src='/assets/scripts/JSONedit.js')
-        link(href='/assets/styles/JSONedit.css', rel='stylesheet', type='text/css')
+        script(src='/assets/scripts/vendor/JSONeditDirectives.js')
+        script(src='/assets/scripts/vendor/JSONedit.js')
+        link(href='/assets/styles/vendor/JSONedit.css', rel='stylesheet', type='text/css')
     body
         #mainView(ng-controller='MainViewCtrl')
             h2 Edit content
