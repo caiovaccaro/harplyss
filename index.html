@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>harplyss</title><link href="/assets/styles/vendor/reset.css" rel="stylesheet"><link href="/assets/styles/vendor/flexboxgrid.css" rel="stylesheet"><link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Poiret+One" rel="stylesheet"><link href="/assets/styles/harplyss.css" rel="stylesheet"><link href="../components/footer/style.css" rel="stylesheet"><link href="../components/header/style.css" rel="stylesheet"><link href="../components/video/style.css" rel="stylesheet"></head><body><header><div class="row between-xs"><div class="col-xs-9"><div class="box"><h1 class="left">harplyss</h1><!--h2.left=subtitle--></div></div><div class="col-xs-3"><div class="box"><iframe src="https://ghbtns.com/github-btn.html?user=caiovaccaro&amp;repo=harplyss&amp;type=star&amp;count=false&amp;size=large&amp;v=2" frameborder="0" scrolling="0" width="77px" height="30px" class="right"></iframe></div></div></div></header><main><div class="wrap container-fluid"><h1>harplyss</h1><p>Smart boilerplate for harp.js.
+<strong>Under construction, use it at your own risk. Everything part of the solution/documentation is constantly changing!</strong></p>
+<h2>Features</h2><ul>
+<li>Automatic assets loading. Harp will include a separate tag for all your &quot;components&quot; CSS and JS files automatically.</li>
+<li>When compiling in production mode (optional), a single CSS/JS tag is added in order to decrease the number of HTTP requests.</li>
+<li>Automatic components partials. Harp will collect all partials (HTML/Jade) from your components into a reference object.</li>
+<li>Data.json interface for editing. By accessing */edit-json urls where there is a _data.json file you will be able to edit it in the browser (thanks @mb21 for <a href="http://mb21.github.io/JSONedit/">JSONedit</a>).</li>
+</ul>
+<h2>Roadmap</h2><ul>
+<li>Livereload.</li>
+<li>Build tasks.</li>
+<li>Support for Webpack, Browserify, JSPM, etc for JS loading.</li>
+</ul>
+<h2>Dependencies</h2><ul>
+<li><a href="https://nodejs.org/">Node</a>.</li>
+<li><a href="http://expressjs.com/">Express</a>.</li>
+<li><a href="http://harpjs.com/">Harp.js</a>.</li>
+<li><a href="http://mb21.github.io/JSONedit/">JSONedit</a>.</li>
+</ul>
+<h2>How it works</h2><h3>Automatic assets loading</h3><p>Harp provides a &quot;public&quot; object that represents the folder structure of the whole project. By using conventional folder names it is possible to loop all the assets and automatically load them.</p>
+<p>Harplyss uses the name &quot;components&quot; for the folder where your modules/includes live. Every component should have a folder and at most 3 files (HTML, JS and CSS). Because of Harp&#39;s magic you can decide the pre-processor/template engine for them.</p>
+<h3>Optional production mode compiling</h3><p>You can pass the flag PRODUCTION=1 when compiling the project, so Harp knows you don&#39;t want automatic assets loading. In this way it will add a single build.css and .js file for you.</p>
+<h3>Automatic components partials</h3><p>Every HTML file of every component is treated as a potential partial, so it can be used anywhere in your project. All those partials are collected in a object called &quot;components&quot;. So you can use it like:</p>
+<pre><code>!= partial(components[&#39;header&#39;][&#39;partial&#39;], { title: title })
+</code></pre><p>As you see you can still use _data.json files to &quot;feed&quot; those partials.</p>
+<h3>Data.json interface for editing</h3><p>Thanks to the amazing client-side solution of @mb21 in <a href="http://mb21.github.io/JSONedit/">JSONedit</a> I was able to wire that with the Node back-end and serve JSON files. The way this works is by identifying the URL pattern when you type */edit-json. If you are wondering when this is useful, it is very helpful when you work with multidisciplinary teams in large projects and content is regularly updated.</p>
+<h2>How to use</h2><ul>
+<li>Clone</li>
+<li>npm install</li>
+<li>npm start</li>
+</ul>
+</div></main><script src="../components/footer/script.js"></script><script src="../components/header/script.js"></script><script src="../components/video/script.js"></script></body></html>
