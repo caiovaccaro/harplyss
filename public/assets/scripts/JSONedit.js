@@ -19,6 +19,12 @@ function MainViewCtrl($scope, $filter) {
         }
     }, true);
 
+    $scope.undo = function() {
+        $scope.jsonString = JSON.stringify(jsonToUndo);
+        $scope.jsonData = jsonToUndo;
+        $scope.saveFile();                
+    }
+
     $scope.saveFile = function() {
         $.ajax({
             url: window.location.href,
