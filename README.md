@@ -12,8 +12,8 @@ Smart boilerplate for harp.js. Under construction, use it at your own risk.
 
 ### Roadmap
 - Livereload.
-- Data.json files "undo" feature through immutable structure.
 - Build tasks.
+- Support for Webpack, Browserify, JSPM, etc for JS loading.
 
 ## Dependencies
 - [Node](https://nodejs.org/).
