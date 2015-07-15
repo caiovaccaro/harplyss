@@ -16,10 +16,10 @@ Smart boilerplate for harp.js. Under construction, use it at your own risk.
 - Build tasks.
 
 ## Dependencies
-- Node.
-- Express.
-- Harp.
-- JSONedit.
+- [Node](https://nodejs.org/).
+- [Express](http://expressjs.com/).
+- [Harp.js](http://harpjs.com/).
+- [JSONedit](http://mb21.github.io/JSONedit/).
 
 ## How it works
 
