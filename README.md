@@ -12,14 +12,14 @@ Smart boilerplate for harp.js. Under construction, use it at your own risk.
 
 ### Roadmap
 - Livereload.
-- Data.json files "undo" feature through immutable structure.
 - Build tasks.
+- Support for Webpack, Browserify, JSPM, etc for JS loading.
 
 ## Dependencies
-- Node.
-- Express.
-- Harp.
-- JSONedit.
+- [Node](https://nodejs.org/).
+- [Express](http://expressjs.com/).
+- [Harp.js](http://harpjs.com/).
+- [JSONedit](http://mb21.github.io/JSONedit/).
 
 ## How it works
 
