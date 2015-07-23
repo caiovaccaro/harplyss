@@ -4,10 +4,22 @@ var harp = require('harp');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+var browserSync = require('browser-sync');
+var connectbs = require('connect-browser-sync');
 var app = express();
 
 app.set('views', './structure-views');
 app.set('view engine', 'jade');
+
+var bs = browserSync({
+  logSnippet: false,
+  files: [
+    __dirname + '/public/**/*.jade',
+    __dirname + '/public/**/*.sass',
+    __dirname + '/public/**/*.js'
+  ]
+});
+app.use(connectbs(bs));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
