@@ -15,6 +15,8 @@ var bs = browserSync({
   logSnippet: false,
   files: [
     __dirname + '/public/**/*.jade',
+    __dirname + '/public/**/*.styl',
+    __dirname + '/public/**/*.scss',
     __dirname + '/public/**/*.sass',
     __dirname + '/public/**/*.js'
   ]
