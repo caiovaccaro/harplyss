@@ -27,7 +27,7 @@ var server = http.createServer(app);
  */
 
 server.listen(port, function() {
-  open('http://localhost:'+port+'/site');
+  open('http://localhost:'+port);
 });
 server.on('error', onError);
 server.on('listening', onListening);
