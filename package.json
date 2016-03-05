@@ -1,15 +1,30 @@
 {
   "name": "harplyss",
-  "version": "0.0.0",
-  "private": true,
+  "description": "Smart boilerplate for harp.js. Automatic assets imports and user friendly json edit.",
+  "keywords": ["harp", "json", "prototype", "components", "boilerplate"],
+  "homepage": "http://caiovaccaro.github.io/harplyss/",
+  "bugs": { "url": "https://github.com/caiovaccaro/harplyss/issues" },
+  "license": "MIT",
+  "author": { "name": "Caio Vaccaro", "url": "http://caiovaccaro.com" },
+  "contributors": [{ "name": "Gabriel Godoy", "url": "https://github.com/gabrielgodoy" }, { "name": "Rafael Gomes", "url": "https://github.com/rafagomes" }],
+  "version": "0.1.0",
+  "main": "app.js",
+  "repository" : { "type": "git", "url" : "https://github.com/npm/npm.git" },
+  "private": false,
   "scripts": {
     "start": "node ./bin/www"
   },
-  "dependencies": {
-    "body-parser": "^1.14.1",
-    "express": "^4.13.3",
-    "harp": "^0.20.1",
-    "jade": "^1.11.0",
-    "morgan": "^1.6.1"
+  "devDependencies": {
+    "body-parser": "1.14.1",
+    "browser-sync": "2.8.0",
+    "connect-browser-sync": "2.0.1",
+    "cookie-parser": "1.3.5",
+    "debug": "2.2.0",
+    "express": "4.13.3",
+    "harp": "0.20.1",
+    "jade": "1.11.0",
+    "morgan": "1.6.1",
+    "open": "0.0.5",
+    "serve-favicon": "2.3.0"
   }
 }

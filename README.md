@@ -1,6 +1,5 @@
 # harplyss
 Smart boilerplate for harp.js.
-**Under construction, use it at your own risk. Everything part of the solution/documentation is constantly changing!**
 
 ## Features
 - Automatic assets loading. Harp will include a separate tag for all your "components" CSS and JS files automatically.
