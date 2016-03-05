@@ -1,15 +1,38 @@
 {
   "name": "harplyss",
   "description": "Smart boilerplate for harp.js. Automatic assets imports and user friendly json edit.",
-  "keywords": ["harp", "json", "prototype", "components", "boilerplate"],
+  "keywords": [
+    "harp",
+    "json",
+    "prototype",
+    "components",
+    "boilerplate"
+  ],
   "homepage": "http://caiovaccaro.github.io/harplyss/",
-  "bugs": { "url": "https://github.com/caiovaccaro/harplyss/issues" },
+  "bugs": {
+    "url": "https://github.com/caiovaccaro/harplyss/issues"
+  },
   "license": "MIT",
-  "author": { "name": "Caio Vaccaro", "url": "http://caiovaccaro.com" },
-  "contributors": [{ "name": "Gabriel Godoy", "url": "https://github.com/gabrielgodoy" }, { "name": "Rafael Gomes", "url": "https://github.com/rafagomes" }],
-  "version": "0.1.0",
+  "author": {
+    "name": "Caio Vaccaro",
+    "url": "http://caiovaccaro.com"
+  },
+  "contributors": [
+    {
+      "name": "Gabriel Godoy",
+      "url": "https://github.com/gabrielgodoy"
+    },
+    {
+      "name": "Rafael Gomes",
+      "url": "https://github.com/rafagomes"
+    }
+  ],
+  "version": "0.2.0",
   "main": "app.js",
-  "repository" : { "type": "git", "url" : "https://github.com/caiovaccaro/harplyss.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caiovaccaro/harplyss.git"
+  },
   "private": false,
   "scripts": {
     "start": "node ./bin/www"
