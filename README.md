@@ -1,6 +1,8 @@
 # harplyss
 Smart boilerplate for harp.js.
 
+[![Github All Releases](https://img.shields.io/github/downloads/caiovaccaro/harplyss/total.svg)]() [![npm](https://img.shields.io/npm/dt/harplyss.svg)]() [![GitHub tag](https://img.shields.io/github/tag/caiovaccaro/harplyss.svg)]()
+
 ### v0.1.0
 
 ## Features
