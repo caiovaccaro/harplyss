@@ -3,8 +3,6 @@ Smart boilerplate for harp.js.
 
 [![Github All Releases](https://img.shields.io/github/downloads/caiovaccaro/harplyss/total.svg)]() [![npm](https://img.shields.io/npm/dt/harplyss.svg)]() [![GitHub tag](https://img.shields.io/github/tag/caiovaccaro/harplyss.svg)]()
 
-### v0.1.0
-
 ## Features
 - Automatic assets loading. Harp will include a separate tag for all your "components" CSS and JS files automatically.
 - When compiling in production mode (optional), a single CSS/JS tag is added in order to decrease the number of HTTP requests.
